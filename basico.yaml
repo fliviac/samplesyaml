@@ -11,8 +11,8 @@ stages:
 - stage: Build
   jobs:
   - job: Build
-    pool:
-      vmImage: 'ubuntu-latest' #You can run on containers too 
+    pool: myLocalPool
+      
     continueOnError: true
     steps:
     - script: echo "hello to my first Build"
